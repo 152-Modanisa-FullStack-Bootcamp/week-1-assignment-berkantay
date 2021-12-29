@@ -37,9 +37,22 @@ html {
 #login-title-container {
   text-align: center;
 }
+#login-title {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .horizontal-line-seperator {
   height: 100%;
   color: black;
   margin: 8px 0px;
+}
+
+.login-input {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid gray;
+  text-emphasis-color: gray;
+  opacity: 80%;
 }
