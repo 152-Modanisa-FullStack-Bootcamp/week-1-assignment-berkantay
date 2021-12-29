@@ -1,4 +1,45 @@
-h1 {
-  color: hotpink;
-  font-family: cursive;
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: #614385; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #516395,
+    #614385
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #516395,
+    #614385
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#main-frame {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-container {
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+#login-title-container {
+  text-align: center;
+}
+
+.horizontal-line-seperator {
+  height: 100%;
+  color: black;
+  margin: 8px 0px;
 }
