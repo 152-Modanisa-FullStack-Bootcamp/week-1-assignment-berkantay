@@ -1,15 +1,7 @@
 body {
   height: 100%;
   width: 100%;
-  margin: 0;
-  background: #614385; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    rgb(81, 143, 235),
-    #6d41a1
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6083e2, #6d41a1);
-  font-family: Arial, Helvetica, sans-serif; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgb(243, 154, 70);
 }
 
 html {
@@ -18,54 +10,70 @@ html {
 }
 
 .some-page-wrapper {
-  margin: 100px;
+  margin: 300px;
   background-color: transparent;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+  max-width: 100%;
+  flex-wrap: nowrap;
 }
 
 .column {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  flex: 1;
+  flex-wrap: nowrap;
 }
 
 .orange-column {
   background-color: orange;
-  height: 100%;
+  max-height: 100%;
+
+  flex-wrap: nowrap;
 }
 
 .blue-column {
   background-color: blue;
-  height: 100%;
+  max-height: 100%;
+
+  flex-wrap: nowrap;
 }
 
 .green-column {
   background-color: green;
-  height: 100%;
-}
+  max-height: 100%;
 
-.imagewrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  margin: 10px;
+  flex-wrap: nowrap;
 }
 
 .image {
   display: block;
   object-fit: cover;
-  width: 100%;
-  height: 100%; /* set to 'auto' in IE11 to avoid distortions */
+  max-width: 100%;
+  flex-wrap: nowrap;
+  max-height: 100%; /* set to 'auto' in IE11 to avoid distortions */
+}
+
+.description-column {
+  background-color: whitesmoke;
+  max-height: 100%;
+  padding: 16px 24px;
+}
+
+.like-column {
+  background-color: whitesmoke;
+  max-height: 100%;
+  flex-wrap: nowrap;
+}
+
+.comment-column {
+  background-color: whitesmoke;
+  max-height: 100%;
+  flex-wrap: nowrap;
+  text-align: end;
 }
