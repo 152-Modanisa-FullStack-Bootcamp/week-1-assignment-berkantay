@@ -1,4 +1,71 @@
-h1 {
-  color: hotpink;
-  font-family: cursive;
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: #614385; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(81, 143, 235),
+    #6d41a1
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6083e2, #6d41a1);
+  font-family: Arial, Helvetica, sans-serif; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.some-page-wrapper {
+  margin: 100px;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.orange-column {
+  background-color: orange;
+  height: 100%;
+}
+
+.blue-column {
+  background-color: blue;
+  height: 100%;
+}
+
+.green-column {
+  background-color: green;
+  height: 100%;
+}
+
+.imagewrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+}
+
+.image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%; /* set to 'auto' in IE11 to avoid distortions */
 }
