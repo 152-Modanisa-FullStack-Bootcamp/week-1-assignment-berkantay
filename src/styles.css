@@ -8,11 +8,8 @@ body {
     rgb(81, 143, 235),
     #6d41a1
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #6083e2,
-    #6d41a1
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #6083e2, #6d41a1);
+  font-family: Arial, Helvetica, sans-serif; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 html {
   height: 100%;
@@ -39,10 +36,6 @@ html {
 #login-title {
   font-family: Arial, Helvetica, sans-serif;
   padding: 0px 160px;
-}
-
-.font {
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .horizontal-line-seperator {
@@ -112,6 +105,7 @@ html {
   flex-direction: row;
   align-items: center;
   padding-bottom: 24px;
+  font-size: 12px;
 }
 
 .signup-link {
