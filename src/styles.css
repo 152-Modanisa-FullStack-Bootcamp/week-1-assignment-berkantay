@@ -1,4 +1,13 @@
-h1 {
-  color: hotpink;
-  font-family: cursive;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.some-page-wrapper {
+  margin: 100px;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  font-family: "Source Sans Pro", sans-serif;
 }

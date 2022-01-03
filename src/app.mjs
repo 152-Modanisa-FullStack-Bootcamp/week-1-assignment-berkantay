@@ -6,19 +6,46 @@ axios
   .then((response) => {
     // Firstly, log response to the console,
     // inspect the response and see that it has data field
-    console.log
+    console.log(response);
     // Assign data field of the response to
     // products variable below by destructuring
     // You can use alias
-    const products = null;
+    const products = response.data;
+    let product_names = [];
+    let product_links = [];
 
     // Print names of all product to the console
     // by calling foreach  method (use arrow function)
+    products.forEach((element) => {
+      product_names.push(element.description);
+    });
 
     // Get all products that contain "Şal" in their name (use filter method)
     // map filtered products to new object having only image and name field
     // assign mapped items to mappedProducts variable
-    const mappedProducts = null;
+    const match = product_names.filter((item) => {
+      return item.includes("Şal");
+    });
+    console.log(match);
+
+    match.forEach((element) => {
+      for (let index = 0; index < product_names.length; index++) {
+        if (element === products[index].description) {
+          product_links.push(products[index].image);
+        }
+      }
+    });
+
+    const map = new Map();
+
+    match.forEach((element, index) => {
+      // console.log(element.description);
+      map.set(element, product_links[index]);
+    });
+    const mappedProducts = map;
+    console.log(mappedProducts);
+    product_links = [];
+    product_names = [];
 
     // Display the images and names of mappedProducts
     // You need to add them to the DOM
