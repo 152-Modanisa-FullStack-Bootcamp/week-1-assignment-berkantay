@@ -10,7 +10,7 @@ html {
 }
 
 .some-page-wrapper {
-  margin: 300px;
+  margin: 600px;
   background-color: transparent;
   justify-content: center;
   align-items: center;
@@ -21,6 +21,7 @@ html {
   flex-direction: row;
   max-width: 100%;
   flex-wrap: nowrap;
+  border: 1px solid black;
 }
 
 .column {
@@ -28,52 +29,33 @@ html {
   flex-direction: column;
   flex-basis: 100%;
   flex-wrap: nowrap;
+  border: 1px solid black;
 }
 
-.orange-column {
-  background-color: orange;
-  max-height: 100%;
-
-  flex-wrap: nowrap;
+.orange-column{
+  align-self: flex-start;
 }
 
-.blue-column {
-  background-color: blue;
-  max-height: 100%;
-
-  flex-wrap: nowrap;
-}
-
-.green-column {
-  background-color: green;
-  max-height: 100%;
-
-  flex-wrap: nowrap;
+.description-area{
+  align-self: flex-start;
+  margin: 8px;
 }
 
 .image {
-  display: block;
   object-fit: cover;
   max-width: 100%;
   flex-wrap: nowrap;
   max-height: 100%; /* set to 'auto' in IE11 to avoid distortions */
+  flex-basis: auto;
+  align-self : center;
 }
 
-.description-column {
-  background-color: whitesmoke;
-  max-height: 100%;
-  padding: 16px 24px;
+.link-area{
+  align-self: center;
+  margin: 8px;
 }
 
-.like-column {
-  background-color: whitesmoke;
-  max-height: 100%;
-  flex-wrap: nowrap;
+.reaction-column{
+  flex: 2 1 0;
 }
 
-.comment-column {
-  background-color: whitesmoke;
-  max-height: 100%;
-  flex-wrap: nowrap;
-  text-align: end;
-}
