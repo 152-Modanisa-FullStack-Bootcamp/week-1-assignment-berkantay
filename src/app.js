@@ -27,6 +27,11 @@ axios
     console.log(match);
 
     const temp_map = new Map();
+    
+    match.forEach((element,index)=>{
+      temp_map.set(element,)
+    })
+
     // Get all products that contain "Şal" in their name (use filter method)
     // map filtered products to new object having only image and name field
     // assign mapped items to mappedProducts variable
