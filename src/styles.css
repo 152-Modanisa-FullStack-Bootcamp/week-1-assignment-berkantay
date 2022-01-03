@@ -1,7 +1,7 @@
 body {
   height: 100%;
   width: 100%;
-  background: rgb(243, 154, 70);
+  background: rgb(248, 246, 245);
 }
 
 html {
@@ -29,7 +29,6 @@ html {
   flex-direction: column;
   flex-basis: 100%;
   flex-wrap: nowrap;
-  border: 1px solid black;
 }
 
 .orange-column{
@@ -37,7 +36,7 @@ html {
 }
 
 .description-area{
-  align-self: flex-start;
+  align-self: flex-end;
   margin: 8px;
 }
 
@@ -55,7 +54,36 @@ html {
   margin: 8px;
 }
 
-.reaction-column{
-  flex: 2 1 0;
+.box1 {
+  margin: 8px;
+  flex-grow: 8;
+  text-align: end;
+  align-content: center;
 }
 
+.like-image{
+  max-height: 2%;
+  max-width: 2%;
+  margin: 1px;
+  display: block;
+}
+
+.reaction-counter{
+  margin: 8px;
+  flex-grow: 1;
+  text-align: end;
+  text-align: start;
+}
+
+.operation-button{
+  flex-grow: 1;
+  max-height: 4%;
+  max-width: 4%;
+  align-content: center;
+  margin: 4px;
+}
+
+.description{
+  flex-grow: 4;
+  align-self: center;
+}
