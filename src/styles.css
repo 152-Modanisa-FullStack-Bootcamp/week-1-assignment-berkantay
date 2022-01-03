@@ -25,9 +25,6 @@ html {
   flex-wrap: nowrap;
 }
 
-.link-row{
-  background-color: green;
-}
 
 .column {
   display: flex;
